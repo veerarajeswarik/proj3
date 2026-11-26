@@ -1,0 +1,187 @@
+/* Header */
+
+.header {
+  background: #431407;
+  color: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #fdba74;
+}
+
+/* Banner */
+
+.banner {
+  background: #ffedd5;
+  color: #431407;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.banner p {
+  color: #9a3412;
+  line-height: 1.8;
+}
+
+.explore-btn {
+  display: inline-block;
+  background: #c2410c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+/* Menu Section */
+
+.menu {
+  padding: 50px 10%;
+  min-height: 500px;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #431407;
+  margin-bottom: 10px;
+}
+
+.menu-subtitle {
+  text-align: center;
+  color: #78716c;
+  margin-bottom: 30px;
+}
+
+/* Category Buttons */
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.category-btn {
+  background: white;
+  color: #9a3412;
+  border: 1px solid #fdba74;
+  border-radius: 25px;
+  padding: 12px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-btn:hover {
+  background: #ffedd5;
+}
+
+.category-btn.active {
+  background: #c2410c;
+  color: white;
+  border-color: #c2410c;
+}
+
+/* Menu List */
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Food Card */
+
+.food-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 10px #00000008;
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  border-color: #c2410c;
+  transform: translateX(5px);
+}
+
+.food-category {
+  color: #c2410c;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.food-details h3 {
+  color: #431407;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #78716c;
+  line-height: 1.6;
+}
+
+.food-price {
+  color: #c2410c;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Footer */
+
+.footer {
+  background: #431407;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  line-height: 2;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .menu {
+    padding: 35px 5%;
+  }
+
+  .food-card {
+    padding: 15px;
+  }
+
+  .food-price {
+    font-size: 20px;
+  }
+}
